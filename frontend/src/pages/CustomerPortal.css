@@ -1,0 +1,103 @@
+.customer-portal-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px 48px;
+}
+
+.customer-portal-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 32px rgba(26, 63, 143, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a3f8f;
+  justify-content: center;
+}
+
+.logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a3f8f, #2d5be3);
+  box-shadow: 0 8px 16px rgba(26, 63, 143, 0.2);
+}
+
+.logo-wordmark {
+  letter-spacing: 0.01em;
+}
+
+.customer-portal-card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #374151;
+}
+
+.info-row strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-chip--amber {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.info-message {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.customer-portal__cta {
+  margin-top: 12px;
+  border: none;
+  background: #1a3f8f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .customer-portal-card {
+    padding: 32px 24px;
+  }
+}

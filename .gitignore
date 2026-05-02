@@ -1,0 +1,24 @@
+# Virtual environments
+venv/
+backend/ml/venv-ml/
+temp_env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Env files
+.env
+
+# Data & ML files (VERY IMPORTANT)
+backend/ml/data/
+*.csv
+*.zip
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db

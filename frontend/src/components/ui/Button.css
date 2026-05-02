@@ -1,0 +1,115 @@
+/* ── Button Base ─────────────────────────────────────── */
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast),
+              border-color var(--transition-fast),
+              opacity var(--transition-fast),
+              box-shadow var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Sizes ───────────────────────────────────────────── */
+.pf-btn--sm {
+  font-size: var(--text-sm);
+  padding: 8px 16px;
+  height: 36px;
+}
+.pf-btn--md {
+  font-size: var(--text-base);
+  padding: 12px 24px;
+  height: 44px;
+}
+.pf-btn--lg {
+  font-size: var(--text-lg);
+  padding: 14px 32px;
+  height: 52px;
+}
+
+/* ── Primary ─────────────────────────────────────────── */
+.pf-btn--primary {
+  background-color: var(--pf-blue-700);
+  color: var(--pf-white);
+}
+.pf-btn--primary:hover:not(:disabled) {
+  background-color: var(--pf-blue-900);
+  box-shadow: 0 4px 12px rgba(26,63,143,0.35);
+}
+.pf-btn--primary:active:not(:disabled) {
+  background-color: var(--pf-blue-900);
+  transform: translateY(1px);
+}
+
+/* ── Secondary ───────────────────────────────────────── */
+.pf-btn--secondary {
+  background-color: var(--pf-white);
+  color: var(--pf-blue-700);
+  border: 1.5px solid var(--pf-blue-700);
+}
+.pf-btn--secondary:hover:not(:disabled) {
+  background-color: var(--pf-blue-50);
+}
+
+/* ── Danger ──────────────────────────────────────────── */
+.pf-btn--danger {
+  background-color: var(--pf-danger);
+  color: var(--pf-white);
+}
+.pf-btn--danger:hover:not(:disabled) {
+  background-color: #9B1515;
+  box-shadow: 0 4px 12px rgba(185,28,28,0.35);
+}
+
+/* ── Ghost ───────────────────────────────────────────── */
+.pf-btn--ghost {
+  background-color: transparent;
+  color: var(--pf-blue-700);
+  border: none;
+}
+.pf-btn--ghost:hover:not(:disabled) {
+  background-color: var(--pf-blue-50);
+}
+
+/* ── Disabled ────────────────────────────────────────── */
+.pf-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ── Loading Spinner ─────────────────────────────────── */
+.pf-btn--loading {
+  cursor: wait;
+}
+.pf-btn__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2.5px solid rgba(255,255,255,0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: btn-spin 0.65s linear infinite;
+  position: absolute;
+}
+.pf-btn--secondary .pf-btn__spinner,
+.pf-btn--ghost .pf-btn__spinner {
+  border-color: rgba(26,63,143,0.25);
+  border-top-color: var(--pf-blue-700);
+}
+.pf-btn__label--hidden {
+  visibility: hidden;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,40 @@
+/* ── Card Base ───────────────────────────────────────── */
+.pf-card {
+  background-color: var(--pf-white);
+  border: 1px solid var(--pf-gray-100);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+/* ── Card Header ─────────────────────────────────────── */
+.pf-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--pf-gray-100);
+  background-color: var(--pf-white);
+}
+
+.pf-card__title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--pf-gray-900);
+  line-height: var(--leading-base);
+}
+
+.pf-card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* ── Card Body ───────────────────────────────────────── */
+.pf-card__body {
+  padding: var(--space-6);
+}
+
+.pf-card__body--no-padding {
+  padding: 0;
+}

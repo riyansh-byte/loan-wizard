@@ -1,0 +1,24 @@
+# Web Framework & Server
+fastapi>=0.110.0,<0.116.0
+uvicorn>=0.29.0,<1.0.0
+httpx>=0.27.0,<1.0.0
+
+# Database & ORM
+sqlalchemy>=2.0.0,<2.1.0
+alembic>=1.13.0,<2.0.0
+psycopg2-binary>=2.9.9,<3.0.0
+
+# Validation & Settings
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.2.0,<3.0.0
+
+# Security & Utilities
+python-jose[cryptography]>=3.3.0,<4.0.0
+python-dotenv>=1.0.1,<2.0.0
+boto3>=1.34.0,<2.0.0
+passlib[bcrypt]>=1.7.0,<2.0.0
+python-multipart>=0.0.6,<1.0.0
+
+# AI/GenAI (No conflict with Deepface/TF since those are in ML env)
+google-generativeai>=0.7.0,<1.0.0
+protobuf>=4.25.0,<6.0.0

@@ -1,0 +1,30 @@
+/* ── FraudScoreBar ─────────────────────────────────── */
+.fraud-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 140px;
+}
+
+.fraud-bar__track {
+  flex: 1;
+  height: 6px;
+  background-color: var(--pf-gray-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.fraud-bar__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+}
+
+.fraud-bar__score {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  min-width: 20px;
+  text-align: right;
+  font-weight: 500;
+}

@@ -1,0 +1,268 @@
+.consent-page {
+  background: #F9FAFB;
+  min-height: 100vh;
+  padding: 48px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.consent-page__inner {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.consent-stepper {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.consent-stepper__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #E5E7EB;
+  font-size: 13px;
+  color: var(--pf-gray-500);
+  background: #fff;
+}
+
+.consent-stepper__item.complete {
+  color: var(--pf-gray-500);
+}
+
+.consent-stepper__item.active {
+  border-color: var(--pf-blue-700);
+  color: var(--pf-blue-700);
+  box-shadow: 0 6px 20px rgba(10, 31, 92, 0.1);
+}
+
+.consent-stepper__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pf-blue-700);
+}
+
+.consent-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.consent-header p {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+.consent-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.consent-card__label {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6B7280;
+}
+
+.consent-card__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.consent-card__badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(26, 63, 143, 0.1);
+  color: var(--pf-blue-700);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.consent-card__amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--pf-blue-700);
+  font-family: var(--font-mono);
+}
+
+.consent-card__term {
+  font-size: 14px;
+  color: #374151;
+  font-family: var(--font-mono);
+}
+
+.consent-card__total {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.consent-card__meta {
+  font-size: 11px;
+  color: #9CA3AF;
+  font-family: var(--font-mono);
+}
+
+.consent-declaration {
+  background: #F8FAFF;
+  border-radius: 10px;
+  border: 1.5px solid var(--pf-blue-700);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.consent-declaration__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--pf-blue-700);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.consent-declaration p {
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.7;
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #111827;
+}
+
+.consent-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.consent-signature {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.consent-signature__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.consent-signature__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.consent-signature__sublabel {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.consent-signature__clear {
+  background: none;
+  border: none;
+  color: #6B7280;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.consent-signature__canvas-wrap {
+  position: relative;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 10px;
+  background: #fff;
+  min-height: 140px;
+  overflow: hidden;
+}
+
+.consent-signature__canvas-wrap canvas {
+  width: 100%;
+  height: 140px;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.consent-signature__placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #D1D5DB;
+  pointer-events: none;
+}
+
+.consent-submit {
+  width: 100%;
+  background: var(--pf-blue-700);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.consent-submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.consent-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #9CA3AF;
+}
+
+@media (max-width: 700px) {
+  .consent-page {
+    padding: 32px 16px;
+  }
+
+  .consent-stepper {
+    justify-content: center;
+  }
+
+  .consent-card,
+  .consent-declaration,
+  .consent-signature {
+    padding: 16px;
+  }
+}
